@@ -1,0 +1,84 @@
+设置迭代次数为800时，运行到第280次迭代就内存不够从而程序崩溃，故此次设置迭代次数为250代。
+
+------------------------------------------------------
+
+Upperbound for every instance1:
+[15291.60384202285]
+
+Lowerbound for every instance1:
+[1014.0]
+
+CPU time for every instance1:
+[130031.55105013499]
+------------------------------------------------------
+
+Upperbound for every instance2:
+[16487.493334553714]
+
+Lowerbound for every instance2:
+[1034.0]
+
+CPU time for every instance2:
+[123107.85280220701]
+------------------------------------------------------
+
+Upperbound for every instance0:
+[15683.215838972053]
+
+Lowerbound for every instance0:
+[1014.0]
+
+CPU time for every instance0:
+[126227.983422487]
+------------------------------------------------------
+
+Upperbound for every instance3:
+[16622.42500507884]
+
+Lowerbound for every instance3:
+[1015.0]
+
+CPU time for every instance3:
+[162783.088006621]
+
+迭代次数250次
+------------------------------------------------------
+
+Upperbound for every instance4:
+[17822.98921149374]
+
+Lowerbound for every instance4:
+[1042.0]
+
+CPU time for every instance4:
+[130040.92338096]
+------------------------------------------------------
+
+Upperbound for every instance5:
+[18121.8589527437]
+
+Lowerbound for every instance5:
+[1034.0]
+
+CPU time for every instance5:
+[113241.572183165]
+------------------------------------------------------
+
+Upperbound for every instance6:
+[14470.950971086992]
+
+Lowerbound for every instance6:
+[1025.0]
+
+CPU time for every instance6:
+[110619.451373714]
+------------------------------------------------------
+
+Upperbound for every instance7:
+[16334.54697473274]
+
+Lowerbound for every instance7:
+[1037.0]
+
+CPU time for every instance7:
+[149402.42376624]
