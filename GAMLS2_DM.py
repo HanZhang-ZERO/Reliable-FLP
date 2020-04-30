@@ -25,7 +25,7 @@ class GA:
         Initialize parameters of GA, import instance
         @listGAParameters = [0:iGenNum, 1:iPopSize, 2:iIndLen, 3:fCrosRate, 4:fMutRate, 5:fAlpha, 6:boolAllo2Faci]
         '''
-        self.local_state = fp_local_state
+        self.local_state = fp_local_state  # 设置随机种子
         self.iGenNum = listGAParameters[0]
         self.iPopSize = listGAParameters[1]
         self.iIndLen = listGAParameters[2]

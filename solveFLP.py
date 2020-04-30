@@ -22,7 +22,7 @@ import sys
 listlist_bestSolsOfAllIns = []  # 如果有重复多次运行，就取最好的结果作为最终输出结果,每个dict是一个问题实例的解，多个问题实例的解组成一个list
 
 # Global variables
-seed = range(10)  # 用于并行程序设置不同的随机种子
+seed = range(10)  # 这行没用
 iActualInsNum = 1
 iInsNum = 8
 iRunsNum = 8
@@ -54,7 +54,7 @@ def funWriteExcel(excelName, a_2d_fEveInsEveRunObjValue):
 
 
 def funGA_DM_single(fp_tuple_combOfInsRuns):
-    local_state = np.random.RandomState(fp_tuple_combOfInsRuns[1])
+    local_state = np.random.RandomState(fp_tuple_combOfInsRuns[1])  # 设置随机种子
     print("Begin:")
     print("Running......")
     cpuStart = time.process_time()
