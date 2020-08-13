@@ -46,8 +46,33 @@ def test():
 
 
 if __name__ == '__main__':
+    # 简单绘图
+    x = [10, 30, 50, 100, 200, 600]
+    y1 = [1.33, 14.83, 64.51, 596.14, 5577.98, 452969.27]
+    y2 = [0.32, 11.90, 268.55, 2248.34, 9207.01, 655885.35]
+    plt.plot(x, y1, color='r', linestyle='--', marker='*', linewidth=1.0, label='EAMLS')
+    plt.plot(x, y2, color='b', linestyle='--', marker='^', linewidth=1.0, label='EA')
+    plt.xlabel('Problem size')
+    plt.ylabel('Average CPU Time')
+    # plt.ylabel('# FE (× 100)')
+    plt.legend(loc='best')
+    plt.show()
+    # plt.savefig('3.svg')
 
-    # 非参数统计检验
+
+"""     # 计算GAMLS2收敛时的时间
+    l3 = 
+    fe = 
+    l3_value = 0.
+    allTime = 
+    feNum = fe[l3.index(l3_value)]
+    time = allTime*(feNum/fe[-1])
+    print("# FE: ", feNum)
+    print("Time: ", time) """
+
+
+
+""" # 非参数统计检验
     data1 = [37803.67804, 37414.45701, 37672.55936, 38185.31316, 37676.95517, 37539.40347, 37848.05862, 37564.41318, 37803.67804, 37414.45701]
     data2 = [143285.0964, 143135.0762, 146480.2716, 143852.8872, 145783.654, 141137.7896, 145421.4693, 147301.4181, 143285.0964, 143135.0762]
     if len(data2) == 0:
@@ -69,10 +94,10 @@ if __name__ == '__main__':
         if data2[i] > a and data2[i] < b:
             num2 += 1
     print("data1's OR:", num1/30)
-    print("data2's OR:", num2/30)
+    print("data2's OR:", num2/30) """
 
 
-    """ # 画图
+""" # 画图
     fileName = "0600-node_RFLPm=2_GAMLS_225Gen_"
     iGenNum = 225
     # 下面4个list都需要手动输入数据来画图
@@ -113,7 +138,7 @@ if __name__ == '__main__':
     plt.savefig(fileName + '_Curve(m=2)-ins'+str(4)+'.svg') """
 
 
-    """ # 画示意图
+""" # 画示意图
     f = open('10-nodeInstances', 'rb')
     ins = pickle.load(f)
     x = ins.a_2d_SitesCoordi[:, 0]  # 横坐标数组，大小[0, 1]
